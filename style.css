@@ -42,9 +42,9 @@ h6 {
 	text-wrap: balance;
 }
 
-* {
+/* * {
 	outline: red solid 1px;
-}
+} */
 
 /* root */
 
@@ -52,6 +52,8 @@ h6 {
   --clr-bg-gray: rgb(219, 219, 219);
   --clr-text-gray: rgb(63, 63, 63);
   --clr-text-white: rgb(255, 255, 255);
+  --clr-text-blue: rgb(86, 146, 224);
+
   
 }
 
@@ -69,6 +71,7 @@ h6 {
 
 body {
   font-family: "Inter", serif;
+  color: var(--clr-text-gray);
   max-width: 1140px;
   margin: 0 auto;
 
@@ -105,7 +108,7 @@ nav {
 .hero {
   display: flex;
   background-color: var(--clr-bg-gray);
-  color: var(--clr-text-gray);
+
 }
 
 .hero img {
@@ -161,12 +164,75 @@ button {
 
 }
 
-.info__main h2,p,span {
-  
+.info__main h2 {
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+
+}
+
+.info__main p {
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
+}
+
+.info__main span {
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
+}
+
+article {
+  display: flex;
+  transition: all 0.3s ease;
+
+}
+
+article:hover {
+  background-color: var(--clr-bg-gray);
+  cursor: pointer;
 
 }
 
 .info__more {
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
+  width: 40%;
+
 }
+
+.info__more img {
+  width: 35%;
+  
+}
+
+.info__more-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+
+}
+
+.info__more-text h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+
+}
+
+.info__more-text span {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.info__more-text a {
+  color: var(--clr-text-blue);
+
+}
+
