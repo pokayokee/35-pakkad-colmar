@@ -50,6 +50,7 @@ h6 {
 
 :root {
   --clr-bg-gray: rgb(219, 219, 219);
+  --clr-logo-gray: rgb(184, 184, 184);
   --clr-text-gray: rgb(63, 63, 63);
   --clr-text-white: rgb(255, 255, 255);
   --clr-text-blue: rgb(86, 146, 224);
@@ -63,17 +64,11 @@ h6 {
 
 /* CSS Custom Layout */
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Inter", serif;
+  font-weight: 400;
   color: var(--clr-text-gray);
-  max-width: 1140px;
-  margin: 0 auto;
+  
 
 }
 
@@ -89,6 +84,16 @@ nav {
   align-items: center;
   margin-left: 1.5rem;
   font-size: 1.25rem;
+  
+}
+
+.nav__logo img + span {
+  font-weight: bold;
+  
+}
+
+.nav__logo span + span {
+  color: var(--clr-logo-gray);
   
 }
 
@@ -140,11 +145,12 @@ nav {
 
 }
 
-button {
+.hero__title button {
   padding: 0.5rem 0;
-  width: 90%;
+  width: 65%;
   background-color: var(--clr-text-gray);
   color: var(--clr-text-white);
+  
 }
 
 .information {
@@ -187,13 +193,13 @@ button {
 
 }
 
-article {
+.info__more article {
   display: flex;
   transition: all 0.3s ease;
 
 }
 
-article:hover {
+.info__more article:hover {
   background-color: var(--clr-bg-gray);
   cursor: pointer;
 
@@ -236,3 +242,153 @@ article:hover {
 
 }
 
+.course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-bg-gray);
+
+}
+
+.course h2 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 800;
+
+}
+
+.course__card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 4.5rem;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  
+}
+
+.course__card h3 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.55rem;
+  font-weight: 600;
+
+}
+
+.course__card span {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+
+}
+
+.course__card p {
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.thesis h2 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 800;
+
+}
+
+.thesis__page {
+  display: flex;
+  
+}
+
+.thesis__page-main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 60%;
+}
+
+.thesis__page-main h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+}
+
+.thesis__page-side {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.thesis__page-side article {
+  display: flex;
+  transition: all 0.3s ease;
+
+}
+
+.thesis__page-side article:hover {
+  background-color: var(--clr-bg-gray);
+  cursor: pointer;
+
+}
+
+.thesis__page-side img {
+  width: 35%;
+  margin: 1rem;
+
+}
+
+.thesis__page-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+
+}
+
+.thesis__page-text h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-left: 1rem;
+  
+}
+
+.thesis__page-text p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+footer p {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+.footer__more {
+  display: flex;
+  margin-top: 1rem;
+
+}
+
+.footer__more li {
+padding: 0 0.5rem;
+
+}
